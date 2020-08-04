@@ -60,10 +60,11 @@ func (c *Client) newRequest(method, path string) (*request, error) {
 		config: &c.config,
 		method: method,
 		url: &url.URL{
-			Scheme:  base.Scheme,
-			Host:    base.Host,
-			Path:    u.Path,
-			RawPath: u.RawPath,
+			Scheme:   base.Scheme,
+			Host:     base.Host,
+			Path:     u.Path,
+			RawPath:  u.RawPath,
+			RawQuery: u.RawQuery,
 		},
 	}
 

@@ -1,5 +1,7 @@
 package hello
 
+import ()
+
 func (c *Client) PingOrder() error {
 	r, err := c.newRequest("GET", "/ping")
 	if err != nil {
