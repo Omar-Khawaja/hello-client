@@ -4,6 +4,7 @@ import (
 	"net/url"
 )
 
+// AppendItem is used to add an item to the file that hello-service creates
 func (c *Client) AppendItem(item string) error {
 	urlstring, err := url.Parse("/items")
 	if err != nil {

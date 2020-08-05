@@ -1,7 +1,6 @@
 package hello
 
-import ()
-
+// PingOrder is used to send a request to the ping endpoint
 func (c *Client) PingOrder() error {
 	r, err := c.newRequest("GET", "/ping")
 	if err != nil {

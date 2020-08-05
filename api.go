@@ -15,6 +15,7 @@ type Config struct {
 	HttpClient *http.Client
 }
 
+// NewClient returns a new client
 func NewClient(config *Config) (*Client, error) {
 	defConfig := DefaultConfig()
 
@@ -35,6 +36,7 @@ func NewClient(config *Config) (*Client, error) {
 	return client, nil
 }
 
+// DefaultConfig returns a default configuration for the client
 func DefaultConfig() *Config {
 	config := &Config{
 		Address:    "http://127.0.0.1:8080",
