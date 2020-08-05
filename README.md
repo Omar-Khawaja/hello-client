@@ -1,3 +1,2 @@
-# hello-client
-
-Creating a client library for demo purposes.
+Client library for
+[hello-service](https://github.com/Omar-Khawaja/hello-service)
